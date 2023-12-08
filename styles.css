@@ -1,0 +1,591 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #011209;
+    color: #F4E5CF;
+    
+  }
+  
+  /* Header Styles */
+  header {
+    background-color:transparent;
+    color: #F4E5CF;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  .nav {
+    background: rgba(1, 18, 9, 0.5);
+    display: flex; 
+   /* justify-content: center;  */
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+   
+  }
+  
+  .nav ul li {
+    margin-right: 20px;
+    
+  }
+
+  h1 a{
+    text-decoration: none;
+    color:#F4E5CF;
+  }
+  
+ /* .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-grow: 1; /* Allow links to shrink and grow */
+  /*  text-align: center; /* Center text within links */
+ 
+
+  .nav ul li a {
+    color: #F4E5CF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px; /* Adjust the value to change the roundness */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-grow: 1;
+    text-align: center;
+
+    display: flex; /* Added display property */
+  align-items: center; /* Center content vertically */
+
+  }
+  
+  .nav ul li a:hover {
+    background-color: #ff6600;
+    color: #F9F3EA;
+    
+  }
+
+.skills-item a{
+  text-decoration: none;
+  color:#ff6600;
+ 
+}
+
+.skills-item h5{
+  display:flex;
+  color:#ff6600;
+ 
+}
+  
+ /* .nav {
+    display: none;
+  }
+  
+  .nav ul {
+    list-style: none;
+  }
+  
+  .nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: #ff6600;
+  }
+  
+  /* Mobile Menu Styles */
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #F4E5CF;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+    transition: color 0.3s ease;
+  }
+
+  /* ... previous CSS ... */
+
+
+/* Home Section Styles */
+#home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #011209; /* Set your desired background color */
+    background: url(/media/port-home.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+  .home p{
+    font-size: .9em;
+  }
+
+
+  .title-cont{
+    top:0;
+    height: 5vh;
+    width:100vw;
+    position:absolute;
+  
+  }
+
+  .home-title{
+   position: sticky;
+   width:100vw;
+   top:0;
+   align-items: center;
+   justify-content: center;
+   padding:0 40px;
+  }
+  
+  .spinning-container {
+    position: relative;
+    width: 300px; /* Adjust the container size to match the circles */
+    height: 300px; /* Adjust the container size to match the circles */
+  }
+  
+  .spinning-image {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  /* Circle Styles */
+  .outer-circle,
+  .middle-circle,
+  .inner-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2.5px dashed #ff6600; /* Adjust border color */
+    animation: spin 6s linear infinite; /* Adjust animation duration and type */
+  }
+  
+  .outer-circle {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation-duration: 12s;
+  }
+  
+  .middle-circle {
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+    animation-duration: 15s;
+  }
+  
+  .inner-circle {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    z-index: 3;
+    animation-duration: 18s;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ... remaining CSS ... */
+  
+  
+  /* ... remaining CSS ... */
+  
+
+  section {
+    min-height: 100vh; /* Set section height to 100% of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #F4E5CF;
+  }
+
+  section h3 {
+    color: #ff6600;
+  }
+
+  .section-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color:#ff6600;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition for both background and border */
+    background-color: transparent;
+    margin: 10px;
+  }
+  
+  .section-btn:hover {
+    background-color: rgba(255, 102, 0, 0.8); /* Transparent white */
+    border-color: #ff6600;
+    color: #011209;
+  }
+
+/* About Section Animation */
+
+  
+  /* ... remaining CSS ... */
+  
+  
+  /* Section Styles (customize as needed) */
+ /* section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6600;
+  }
+  */
+
+  .about p{
+    padding-top:20px;
+  }
+
+
+  .collapsible {
+    background-color: transparent;
+    color: #ff6600;
+    cursor: pointer;
+    padding: 1px;
+    width: 20%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .content {
+    display: none;
+    padding: 0 10px;
+    align-items: center;
+  }
+  
+
+
+  /* ... (existing styles) */
+ 
+  .skills-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .skills-item {
+    margin-bottom: 10px;
+  }
+  
+  
+  .experience-section {
+    width: 80%;
+    height:80%;
+    margin: 0 auto;
+  }
+
+  .experience-section p{
+    font-size: 99%;
+    font-weight: 600;
+  }
+
+  .disclaimer{
+    font-size:.7em;
+  }
+  
+  .experience-item {
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 70%;
+  }
+  
+  .progress {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255, 102, 0, 0.6);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .s-progress{
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 102, 0, 0.4);
+    border-radius: 5px;
+    overflow: hidden; 
+  }
+  
+  .progress-inner-s1{
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 98%;
+  }
+
+  .progress-inner-s2{
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 90%;
+  }
+
+  .progress-inner-s3{
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 78%;
+  }
+
+  .progress-inner-s4{
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 60%;
+  }
+
+  .progress-inner-s5{
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 73%;
+  }
+
+  .progress-inner-s6{
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 78%;
+  }
+
+  .progress-inner1 {
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 65%;
+  }
+  .progress-inner2 {
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 35%;
+  }
+  .progress-inner3 {
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 70%;
+  }
+  .progress-inner4 {
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 46%;
+  }
+
+  
+  
+
+/* Contact Form Styles */
+.contact h3{
+  padding-bottom: 10px;
+}
+
+.contact h2{
+  padding-bottom: 0;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background:transparent;
+    border-radius: 5px;
+    border: 1px solid #ff6600;
+  }
+  
+#name, #email, #phone, #message{
+  color:#ff6600
+}
+
+#name::placeholder, #email::placeholder, #phone::placeholder, #message::placeholder{
+  color:#F4E5CF
+}
+
+  #submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #011209;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  #submit:hover {
+    background-color: #a04102;
+  }
+  
+  footer {
+    background: url(/media/port-footer.png);
+    background-size: cover;
+    background-position: center center;
+    color: #F4E5CF;
+    padding: 20px 15px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 5px;
+    font-size: 0.8em;
+  }
+  
+  .footer-content a {
+    color: #F4E5CF;
+    text-decoration: none;
+  }
+
+  .footer-content a:hover{
+    color:#ff6600;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+  .cec-container{
+    background: url(/media/CEC.png.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat:no-repeat;
+    position: relative;
+    bottom:-10px;
+    left:45%;
+    height:30px;
+    width:30px;
+    z-index:1001;
+  }
+
+
+/* Style for enabled line of code */
+/* Styling for checkbox and label */
+input[type="checkbox"] {
+
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff6600;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #F4E5CF;
+}
+
+/* Style for label */
+label  {
+  color: #F4E5CF;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+
+
+
+/*<div class="checkbox-container">
+              <input type="checkbox" id="myCheckbox">
+              <label for="myCheckbox">Resume Request</label>
+            </div>
+          
+            <div id="lineOfCode" style="display: none;">
+              <input type="hidden" name="_autoresponse" value="Thank you for your request of my resume! I will send that as soon as possible.">
+            </div>
+*/

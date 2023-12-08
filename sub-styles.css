@@ -1,0 +1,280 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #011209;
+    color: #F4E5CF;
+    
+  }
+  
+  /* Header Styles */
+  header {
+    background-color:transparent;
+    color: #F4E5CF;
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+  }
+
+  .title {
+   background: rgba(1, 18, 9, 0.8) ;
+   
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .content-title{
+    position: relative;
+    width:90vw;
+    background: url(/media/divider.png) no-repeat;
+    background-position: bottom center;
+    background-size:contain;
+  }
+  .content-title h3{
+    padding-bottom: 10%;
+  }
+  h1 a{
+    text-decoration: none;
+    color:#F4E5CF;
+  }
+
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #F4E5CF;
+    font-size: 39px;
+    cursor: pointer;
+    float: right;
+    transition: color 0.3s ease;
+  }
+
+  section {
+    min-height: 100vh; /* Set section height to 100% of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #F4E5CF;
+  }
+
+  section h3 {
+    color: #ff6600;
+  }
+
+  .content{
+    width:80vw;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+  }
+
+  .gauge {
+    width: 80%;
+    margin-bottom: 20px;
+    animation: fillGauge 2s ease-in-out forwards; /* Animation added */
+    opacity: 0; /* Initially hidden, will fade in with animation */
+  }
+  
+  .gauge-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color:#F4E5CF
+  }
+  
+  .gauge-meter {
+    width: 100%;
+    height: 20px;
+    background-color: #F4E5CF;
+    border-radius: 10px;
+    position: relative;
+    z-index:50;
+  }
+  
+  .gauge-progress1 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    
+
+  }
+
+  .gauge-progress2 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    
+
+  }
+
+  .gauge-progress3 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    
+
+  }
+
+  .gauge-progress4 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    
+
+  }
+  
+  .gauge-progress5 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+
+  .gauge-progress6 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+  }
+
+  .gauge-progress7 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+  }
+
+  .gauge-progress8 {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+  }
+
+  [data-percentage]::before {
+    content: attr(data-percentage) '%';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #011209;
+  }
+  
+  @keyframes fillGauge {
+    to {
+      opacity: 1;
+    }
+    /* Adjust the width for the gauge based on data-percentage */
+    from {
+      width: 0;
+    }
+  }
+
+  
+  
+ 
+  .section-btn {
+    position: relative;
+    left:50%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color:#ff6600;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition for both background and border */
+    background-color: transparent;
+    margin: 10px;
+  }
+  
+  .section-btn:hover {
+    background-color: rgba(255, 102, 0, 0.8); /* Transparent white */
+    border-color: #ff6600;
+    color: #011209;
+  }
+
+  footer {
+    background: url(media/port-footer.png);
+    background-size: cover;
+    background-position: center center;
+    color: #F4E5CF;
+    padding: 20px 15px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 5px;
+    font-size: 0.8em;
+  }
+  
+  .footer-content a {
+    color: #F4E5CF;
+    text-decoration: none;
+  }
+
+  .footer-content a:hover{
+    color:#ff6600;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
