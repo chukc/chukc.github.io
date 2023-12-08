@@ -41,7 +41,7 @@
   .content-title{
     position: relative;
     width:90vw;
-    background: url(/media/divider.png) no-repeat;
+    background: url(divider.png) no-repeat;
     background-position: bottom center;
     background-size:contain;
   }
